@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://www.xtrafondos.com/wallpapers/colores-difuminados-7943.jpg");
+}
+
+.form-register {
+  width: 400px;
+  background-color: #0e0b16;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #a239ca;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background-color: #e7dfdd;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #4717f6;
+  font-family: "calibri";
+  font-size: 18px;
+}
+
+.button {
+  width: 100%;
+  background-color: #a239ca;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 16px 0;
+  border: none;
+  font-size: 16px;
+}
+.button:hover {
+  cursor: pointer;
+  width: 100%;
+  background-color: #441955;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 16px 0;
+  border: none;
+  font-size: 16px;
+}
+
+.Titulo {
+  margin: 40px 500px 0px 500px;
+  border-radius: 30px;
+  background-color: #0e0b16;
+  font-family: "calibri";
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
