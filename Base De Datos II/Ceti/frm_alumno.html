@@ -1,0 +1,46 @@
+<!DOCTYPE php>
+<html lang="Sp">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <form action="Emilio.php" method="POST">
+      nombre:<input type="text" name="nombre" /><br />
+      apellido:<input type="text" name="apellido" /><br />
+      registro:<input type="number" name="registro" /><br />
+      Sexo:
+      <input type="radio" name="sexo" value="M" />Masculino
+      <input type="radio" name="sexo" value="F" />Femenino
+      <br />
+      municipio:
+      <select name="municipio">
+        <option value="1" selected>Acatic</option>
+        <option value="2">Acatlan de Juarez</option>
+        <option value="40">Guadalajara</option>
+        <option value="80">San Pedro Tlaquepaque</option>
+        <option value="99">Tlajomulco de Zuñiga</option>
+        <option value="120">Zapopan</option></select
+      ><br />
+      carrera:
+      <input type="radio" name="carrera" value="1" />Construcción
+      <input type="radio" name="carrera" value="3" />Software
+      <input type="radio" name="carrera" value="5" />Electromecánica
+      <input type="radio" name="carrera" value="7" />Automotriz
+      <input type="radio" name="carrera" value="8" />Fármacos
+      <br />
+      numero celular:<input type="number" name="celular" /><br />
+      domicilio:<input type="text" name="domicilio" /><br />
+      colonia:<input type="text" name="colonia" /><br />
+      hobby:
+      <input type="radio" name="hobby" value="Estudiar" />Estudiar
+      <input type="radio" name="hobby" value="Ver tele" />Ver tele
+      <input type="radio" name="hobby" value="Deportes" />Deportes
+      <input type="radio" name="hobby" value="Jugar Videojuegos" />Videojuegos
+      <input type="radio" name="hobby" value="Leer" />Leer
+      <br />
+      <input type="submit" value="aceptar" />
+    </form>
+  </body>
+</html>

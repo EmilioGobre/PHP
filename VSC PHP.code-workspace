@@ -5,6 +5,7 @@
     }
   ],
   "settings": {
-    "discord.enabled": true
+    "discord.enabled": true,
+    "cSpell.words": ["Tlajomulco"]
   }
 }
