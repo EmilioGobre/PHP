@@ -1,7 +1,6 @@
 <?php
 
 $conexion = mysqli_connect('localhost', 'root', '', 'mymovie');
-
 if (!$conexion) {
     echo 'Error al conectar a la base de datos';
 }
@@ -9,7 +8,7 @@ if (!$conexion) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$query="SELECT * FROM usuario WHERE email='$email' AND password=MD5('$password')";
+$query = "SELECT * FROM usuario WHERE email='$email' AND password='$password'";
 $resultado = mysqli_query($conexion, $query);
 
 if (mysqli_num_rows($resultado) > 0) {
