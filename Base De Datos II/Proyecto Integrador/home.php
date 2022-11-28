@@ -9,7 +9,15 @@
 </head>
 
 <body>
-    <h1>Home</h1>
+    <div id="Title">
+        <h1>Home</h1>
+    </div>
+    <div id="Menu">
+        <ul>
+            <li><a href="productos.php">Productos</a></li>
+            <li><a href="proveedores.php">Proveedores</a></li>
+            <li><a href="registro.php">Registro</a></li>
+        </ul>
 </body>
 
 </html>

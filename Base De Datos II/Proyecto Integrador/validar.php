@@ -6,7 +6,7 @@ $_SESSION['usuario'] = $usuario;
 
 include("db.php");
 
-$consulta = "SELECT * FROM empleados WHERE nombre = '$usuario' and codigo_empleado = '$contraseña'";
+$consulta = "SELECT * FROM empleado WHERE nombre = '$usuario' and clave = '$contraseña'";
 $resultado = mysqli_query($conexion, $consulta);
 
 $filas = mysqli_num_rows($resultado);
