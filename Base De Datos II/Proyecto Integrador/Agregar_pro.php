@@ -11,7 +11,7 @@ $vendedor = $_POST['vend'];
 include("db.php");
 
 
-$delete_pro = "Insert into producto (codigo_producto, nombre_producto, precio_compra, precio_venta, proveedor,
+$agreg_pro = "Insert into producto (codigo_producto, nombre_producto, precio_compra, precio_venta, proveedor,
 cantidad, Vendedor) values ('$codigo','$nombre','$precio','$precio_venta','$codigo_proveedor','$cantidad','$vendedor')";
 $resultado = mysqli_query($conexion, $delete_pro);
 
