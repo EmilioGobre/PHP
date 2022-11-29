@@ -12,11 +12,11 @@ $resultado = mysqli_query($conexion, $consulta);
 $filas = mysqli_num_rows($resultado);
 
 if ($filas) {
-    header("location:home.php");
+    header("location:home.html");
 } else {
 ?>
     <?php
-    include("index.php");
+    include("index.html");
     ?>
     <h1 class="bad">ERROR EN LA AUTENTIFICACION</h1>
 <?php
@@ -24,3 +24,4 @@ if ($filas) {
 
 mysqli_free_result($resultado);
 mysqli_close($conexion);
+?>
