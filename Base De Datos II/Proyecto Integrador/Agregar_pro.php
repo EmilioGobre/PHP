@@ -7,9 +7,7 @@ $codigo_proveedor = $_POST['cod_prov'];
 $cantidad = $_POST['cant'];
 $vendedor = $_POST['vend'];
 
-
 include("db.php");
-
 
 $agreg_pro = "Insert into producto (codigo_producto, nombre_producto, precio_compra, precio_venta, proveedor,
 cantidad, Vendedor) values ('$codigo','$nombre','$precio','$precio_venta','$codigo_proveedor','$cantidad','$vendedor')";
