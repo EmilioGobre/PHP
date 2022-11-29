@@ -14,9 +14,9 @@
     </div>
     <div class="container-lista">
         <ul class="lista">
-            <li class="elemento1"><a href="Agregar_pro.php">Agregar Producto</a></li>
+            <li class="elemento1"><a href="Agregar_pro.html">Agregar Producto</a></li>
             <li class="elemento2"><a href="Eliminar_pro.html">Eliminar Producto</a></li>
-            <li class="elemento3"><a href="modificar.php">Modificar Producto</a></li>
+            <li class="elemento3"><a href="modify_pro_page.html">Modificar Producto</a></li>
         </ul>
         <div>
             <table>
