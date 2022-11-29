@@ -11,22 +11,24 @@ $vendedor = $_POST['vend'];
 include("db.php");
 
 $query = "SELECT * FROM producto WHERE codigo_producto = $codigo";
-if ($code == '') {
+$result = mysqli_query($conexion, $query);
+if ($code == "") {
     $code = 'codigo_producto';
-} elseif ($nombre == '') {
+} elseif ($nombre == "") {
     $nombre = 'nombre_producto';
-} elseif ($precio == '') {
+} elseif ($precio == "") {
     $precio = 'precio_compra';
-} elseif ($precio_venta == '') {
+} elseif ($precio_venta == "") {
     $precio_venta = 'precio_venta';
-} elseif ($codigo_proveedor == '') {
+} elseif ($codigo_proveedor == "") {
     $codigo_proveedor = 'proveedor';
-} elseif ($cantidad == '') {
+} elseif ($cantidad == "") {
     $cantidad = 'cantidad';
-} elseif ($vendedor == '') {
+} elseif ($vendedor == "") {
     $vendedor = 'Vendedor';
 }
-$cascade = "SET FOREIGN NULL=True";
+$cascade = "SET Foreign_key_checks = 0";
+$cascade_res = mysqli_query($conexion, $cascade);
 $update_pro = "UPDATE producto SET codigo_producto = '$code', nombre_producto = '$nombre',
 precio_compra = '$precio', precio_venta = '$precio_venta', proveedor = '$codigo_proveedor',
 cantidad = '$cantidad', Vendedor = '$vendedor' WHERE codigo_producto = '$codigo'";
@@ -43,4 +45,6 @@ if ($resultado) {
     <h1 class="bad">ERROR EN LA AUTENTIFICACION</h1>
 <?php
 }
+$cascade = "SET Foreign_key_checks = 1";
+$cascade_res = mysqli_query($conexion, $cascade);
 ?>
