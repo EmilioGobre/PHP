@@ -11,11 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $imagen = $_POST['imagen'];
 
 
-    $tcks = (int)$tickets_disponibles;
+    $tcks = (float)$tickets_disponibles;
     $prc = doubleval($precio);
 
 
-    $path = "img/$nombre.png";
+    $path = "img/$name.png";
     $actualpath = "http://192.168.100.107/VSC%20PHP/Programacion%20Movil/MyMovie/$path";
 
     $sql = "INSERT INTO peliculas (name, horario, tickets_disponibles, precio, clasificacion, imagen)

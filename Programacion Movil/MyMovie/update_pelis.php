@@ -9,13 +9,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $precio = $_POST['precio'];
     $clasificacion = $_POST['clasificacion'];
 
-    $tcks = (int)$tickets;
-    $prc = (int)$precio;
+    $tcks = (float)$tickets;
+    $prc = (float)$precio;
 
     $sql = "UPDATE peliculas SET name='$name', horario='$horario', tickets_disponibles=
     '$tcks', precio='$prc', clasificacion='$clasificacion' WHERE name='$name'";
 
-    if ($conexion->query($sql) === TRUE) {
+    if ($conexion->query($sql) === true) {
         echo "Pelicula Modificada Correctamente";
     } else {
         echo "Error: " . $conexion->error;
